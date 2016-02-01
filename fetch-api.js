@@ -1,4 +1,4 @@
-!function(win){
+!function(exports){
     var types = {
         json: 'application/json', form: 'application/x-www-form-urlencoded',
     };
@@ -18,13 +18,15 @@
         init.body = body
 
         init.headers = init.headers || {};
-        init.headers['Accept'] = init.headers['Accept'] || types[type];
         init.headers['Content-Type'] = types[type] || type;
+
+        if (type == 'json')
+            init.headers['Accept'] = init.headers['Accept'] || types[type];
 
         return fetch(input, init);
     }
 
-    win.Fetch = {
+    exports.Fetch = {
         fetch:function(input, init){
             return fetch(input, init);
         },
@@ -49,4 +51,4 @@
             return fetchWithBody('PATCH', input, body, type, creds, init);
         },
     };
-}(window);
+}(typeof module == 'undefined' ? window : module.exports);
