@@ -1,6 +1,8 @@
+sudo: false
 language: node_js
 node_js:
   - '5.4.0'
 before_script:
-  - npm install -g gulp babel-core babel
+  - npm install -g gulp babel babel-core babel-preset-es2015
+  - gulp -v
 script: gulp
