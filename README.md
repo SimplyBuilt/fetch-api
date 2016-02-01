@@ -15,7 +15,7 @@ Fetch.get('/something.json').then(success).catch(failure);
 **GET** something else with same-origin credentials:
 
 ```javascript
-Fetch.get('/something-else.json').then(success).catch(failure);
+Fetch.get('/something-else.json', true).then(success).catch(failure);
 ```
 
 **GET** something with headers
