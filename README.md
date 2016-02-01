@@ -1,4 +1,5 @@
-# Fetch API
+# Fetch API [![Build
+Status](https://travis-ci.org/SimplyBuilt/fetch-api.svg?branch=master)](https://travis-ci.org/SimplyBuilt/fetch-api)
 
 Terser fetch API for JavaScript.
 
