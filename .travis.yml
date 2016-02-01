@@ -4,6 +4,4 @@ node_js:
   - '5.4.0'
 before_script:
   - npm install -g gulp babel babel-core babel-preset-es2015
-  - npm install
-  - gulp -v
 script: gulp
