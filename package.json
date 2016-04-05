@@ -1,6 +1,7 @@
 {
-  "name": "Fetch-API",
+  "name": "fetch-api",
   "description": "Terser fetch API for JavaScript",
+  "main": "fetch-api.js",
   "version": "0.1.0",
   "repository": "git@github.com:SimplyBuilt/fetch-api.git",
   "license": "MIT",
